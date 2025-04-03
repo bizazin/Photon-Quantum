@@ -1,0 +1,36 @@
+component Status { }
+
+component StatusTypeId { EStatusTypeId Value; }
+
+component Duration { FP Value; }
+component TimeLeft { FP Value; }
+
+component Period { FP Value; }
+component TimeSinceLastTick { FP Value; }
+component ApplierStatusLink { int Value; }
+component Applied { }
+component Affected { }
+component Unapplied { }
+
+component Fire { }
+component Freeze { }
+
+[Serializable]
+struct StatusSetup
+{
+    EStatusTypeId StatusTypeId;
+    FP Value;
+    FP Duration;
+    FP Period;
+}
+
+enum EStatusTypeId 
+{
+    Unknown = 0,
+    Fire = 1,
+    Freeze = 2,
+    PoisonEnchant = 3,
+    ExplosiveEnchant = 4,
+}
+
+

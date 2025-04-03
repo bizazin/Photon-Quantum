@@ -1,0 +1,26 @@
+component PlayerLink 
+{ 
+    PlayerRef Value;
+    EntityRef Entity;
+}
+
+component Owner
+{
+    PlayerLink Link;
+    int TeamIndex;
+}
+
+
+
+component SelfDestructTimer { FP Value; }
+component Destructed { }
+component Radius { FP Value; }
+
+input {
+	button LeftButton;
+	button RightButton;
+	button UpButton;
+	button DownButton;
+	
+	FPVector3 Direction;
+}

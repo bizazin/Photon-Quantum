@@ -1,0 +1,23 @@
+component PlayerActionState { EPlayerActionState Value; }
+component PlayerLifeState { EPlayerLifeState Value; }
+component CurrentTarget { PlayerLink Value; }   
+component MuzzleOffset { FPVector3 Value; }   
+
+component AttackPreparingDelay { FP Value; }
+
+enum EPlayerActionState 
+{
+    None,
+    Idle,
+    Moving,
+    AttackPreparing,
+    Attacking
+}
+
+enum EPlayerLifeState 
+{
+    None,
+    Alive,
+    Dead
+}
+

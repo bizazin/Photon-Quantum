@@ -1,0 +1,5 @@
+event FreezeApplied { EntityRef Value; }
+event FreezeUnApplied { EntityRef Value; }
+
+event FireApplied { EntityRef Value; }
+event FireUnApplied { EntityRef Value; }

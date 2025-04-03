@@ -1,0 +1,3 @@
+component Cooldown { FP Value; }
+component CooldownLeft { FP Value; }
+component CooldownUp { }
